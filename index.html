@@ -10,16 +10,12 @@
 </head>
 <body>
 	<div class="title">
-		<h1> <a href="index.html" class="titre_arnaud"> arnaud.BDN </a> </h1>
+		<p> <b> <a href="index.html" class="titre_arnaud"> arnaud.BDN </a> </b> </p>
 
 		
 		<img class="menu-toggle" src="fleche-vers-le-bas.png" alt="Menu" >
 		 
-		 
-		 
-		
 	</div>
-
 
 	<div class="dropdown-menu" id="dropdownMenu">
 		<ul>
@@ -36,32 +32,26 @@
 			</div>
 		
 			<div>
-				<p class="nav-droite-title"> <b> δ </b>  </p>
-				<hr>
-
-				<ul class="nav-liste-2-g">
-				
-				<li><a href="aspirer.html"> <b>aspirer la poussière, </b> <p class="lieu_date"> 2024</p> </a></li>
-				<li><a href="lionel.html"> <b>Lionel, </b> <p class="lieu_date"> 2023</p> </a></li>
-
-				</ul>
-
-				
-
-			</div>
-
-			<div>
 				<p class="nav-droite-title"> <b> tournages </b> </p>
 				<hr>
 
 				<ul class="nav-liste-droite">
 					<li><a href="ombre.html"> <b> Dans l'Ombre</b> </a> <p class="lieu_date"> Bruay-La-Buissère, 2024. </p> </li>
 					<li><a> <b> 00h58 </b></a> <p class="lieu_date"> </p> <p class="lieu_date"> Lille, 2024. </p></li>
-					<li><a>  </a></li>
-					<li><a>  </a></li>
+					
 				</ul>
 
 			</div>
+
+			<div>
+				<p class="nav-droite-title"> <b> δ </b>  </p>
+				<hr>
+				<ul class="nav-liste-2-g">
+				<li><a href="aspirer.html"> <b>aspirer la poussière, </b> <p class="lieu_date"> 2024</p> </a></li>
+				<li><a href="lionel.html"> <b>Lionel, </b> <p class="lieu_date"> 2023</p> </a></li>
+				</ul>
+			</div>
+
 		</ul>
 	</div>
 
@@ -182,6 +172,28 @@
                 dropdownMenu.style.display = "none"; // Cacher le menu
             }
         }
+
+
+		function toggleMenu() {
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    // Vérifie si le menu est actuellement affiché et bascule son état
+    dropdownMenu.style.display = dropdownMenu.style.display === "none" || dropdownMenu.style.display === "" ? "block" : "none";
+}
+
+function handleClickOutside(event) {
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const menuToggle = document.querySelector('.menu-toggle'); // Assurez-vous d'avoir une image avec cette classe pour ouvrir le menu
+
+    // Vérifie si le clic était en dehors du menu déroulant et de l'image
+    if (!dropdownMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        dropdownMenu.style.display = "none"; // Cacher le menu si le clic est à l'extérieur
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+    document.addEventListener('click', handleClickOutside);
+});
     </script>
 
 </body>
