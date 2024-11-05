@@ -5,14 +5,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>arnaud.BDN</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 
 </head>
 <body>
 	<div class="title">
-		<h1> <a href="main.html" class="titre_arnaud"> arnaud.BDN </a> </h1>
-	</div>
-	<section id="home"> 
+		<h1> <a href="index.html" class="titre_arnaud"> arnaud.BDN </a> </h1>
+
 		
+		<img class="menu-toggle" src="fleche-vers-le-bas.png" alt="Menu" >
+		 
+		 
+		 
+		
+	</div>
+
+
+	<div class="dropdown-menu" id="dropdownMenu">
+		<ul>
+			<div>
+				<p class="nav-droite-title"> <b>photographie de rue </b>  </p>
+				<hr>
+
+				<ul class="nav-liste-1-g">
+					<li><a href="paris.html"> <b> paris, </b> </a> <p class="lieu_date"> 2024. </p> </li>
+					<li><a href="oujda.html"> <b>oujda - وجدة,</b></b> </a> <p class="lieu_date"> 2022. </p> </li></a></li>
+					<li><a> <b>montréal, </b> </a> <p class="lieu_date"> 2023. </p> </li> </a></li>
+					
+				</ul>
+			</div>
+		
+			<div>
+				<p class="nav-droite-title"> <b> δ </b>  </p>
+				<hr>
+
+				<ul class="nav-liste-2-g">
+				
+				<li><a href="aspirer.html"> <b>aspirer la poussière, </b> <p class="lieu_date"> 2024</p> </a></li>
+				<li><a href="lionel.html"> <b>Lionel, </b> <p class="lieu_date"> 2023</p> </a></li>
+
+				</ul>
+
+				
+
+			</div>
+
+			<div>
+				<p class="nav-droite-title"> <b> tournages </b> </p>
+				<hr>
+
+				<ul class="nav-liste-droite">
+					<li><a href="ombre.html"> <b> Dans l'Ombre</b> </a> <p class="lieu_date"> Bruay-La-Buissère, 2024. </p> </li>
+					<li><a> <b> 00h58 </b></a> <p class="lieu_date"> </p> <p class="lieu_date"> Lille, 2024. </p></li>
+					<li><a>  </a></li>
+					<li><a>  </a></li>
+				</ul>
+
+			</div>
+		</ul>
+	</div>
+
+	<section id="home"> 
+
+
 		<div class="main-container">
 			
 			
@@ -116,6 +171,18 @@
 	</section>
 
 
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+                dropdownMenu.style.display = "block"; // Afficher le menu
+            } else {
+                dropdownMenu.style.display = "none"; // Cacher le menu
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -24,3 +24,7 @@ modal.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
+
+
+

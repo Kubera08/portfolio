@@ -209,3 +209,82 @@ video {
     font-weight: bold;
     cursor: pointer; /* Curseur pour indiquer que c'est cliquable */
 }
+
+
+@media (min-width: 450px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav-gauche {
+	  display: none;
+	}
+	.nav-droite {
+		display: none;
+	  }
+	  .main-container {
+		width: 100%;
+		height: 100%;
+		margin-left: 0;
+	  }
+	  .content-middle {
+		width: 100%;
+		margin-left: 0;
+		padding: 15px;
+	  }
+	  .title {
+		margin: 20px;
+		
+	  }
+	  .title {
+		display: flex;
+		justify-content: space-between;
+	  }
+	  .dropdown-menu {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+	  }
+	  
+  }
+  
+  .menu-toggle {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+ }
+ 
+
+ .dropdown-menu {
+    display: none; /* Cacher le menu par défaut */
+    position: absolute; /* Positionner le menu en rapport à l'image */
+    top: 0px; /* Ajuste selon la position de ton image */
+    left: 0;
+    width: 100%; /* Prendre toute la largeur */
+	height: 40rem;
+    background-color: white; /* Couleur de fond */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Ombre */
+    z-index: 1000; /* Assurer que le menu est au-dessus des autres éléments */
+	padding: 20px;
+}
+
+.dropdown-menu ul {
+    list-style-type: none; /* Enlever les puces */
+    padding: 0; /* Enlever le padding */
+    margin: 0; /* Enlever la marge */
+}
+
+.dropdown-menu li {
+    padding: 10px; /* Espacement des éléments */
+}
+
+.dropdown-menu li a {
+    text-decoration: none; /* Enlever le soulignement */
+    color: black; /* Couleur du texte */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0; /* Changer la couleur de fond au survol */
+}
