@@ -24,6 +24,11 @@ a {
 p {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+h1 {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
 hr {
 	border: none;         
     height: 1px;          
@@ -106,6 +111,7 @@ video {
 }
 .home_text {
 	margin-top: 20px;
+	display: none;
 }
 
 .lieu_date {
@@ -132,6 +138,11 @@ video {
 }
 .coordonnees {
 	font-size:14px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: self-start;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 .title-paris {
 
@@ -145,6 +156,7 @@ video {
 
 
 }
+
 .galerie-paris {
 	width: 650px;
 	float: left;
@@ -209,3 +221,133 @@ video {
     font-weight: bold;
     cursor: pointer; /* Curseur pour indiquer que c'est cliquable */
 }
+.nav-responsive-1 hr {
+
+	border: none;         
+    height: 1px;          
+    background-color: #000000; 
+    margin: 10px 0; 
+
+}
+.video {
+	margin-top: 20px;
+	width: 100%;
+}
+.text-petit {
+	font-size: 15px;
+	color: #000000;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lionel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img_video {
+	width: 100%;
+	padding: 25px;
+}
+.nav-responsive-1 {
+
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.text-aspirer-responsive {
+	display: none;
+}
+
+.nav-droite-title-responsive {
+
+	padding-bottom: 10px;
+}
+
+@media (min-width: 450px) {
+	.menu-toggle {
+		display: none;
+	}
+	.nav-responsive-1 {
+		display: none;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	.texte-pc {
+		display: none;
+		margin-top: 20px;
+	}
+	.nav-gauche {
+	  display: none;
+	}
+	.nav-droite {
+		display: none;
+	  }
+	  .main-container {
+		width: 100%;
+		height: 100%;
+		margin-left: 0;
+		margin-top: 0;
+	  }
+	  .content-middle {
+		width: 100%;
+		margin-left: 0;
+		padding: 15px;
+	  }
+	  .title {
+		margin: 20px;
+
+		
+	  }
+	  .title {
+		display: flex;
+		justify-content: space-between;
+	  }
+	  .dropdown-menu {
+		display: flex;
+		justify-content: space-between;
+		font-style: italic;
+		flex-direction: column;
+
+	  }
+	  .main-container {
+        grid-template-columns: 1fr; /* Une seule colonne pour les écrans de moins de 450px */
+    }
+	.galerie-paris {
+        grid-template-columns: 1fr; /* Une seule colonne pour les écrans de moins de 450px */
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 25px;
+		
+    }	
+	.galerie-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text-aspirer {
+		padding: 15px;
+	  
+  }
+
+  .menu-toggle {
+	width: 15%;
+	height: 15%;
+	vertical-align: middle;
+	z-index: 10001;
+ }
+ .home_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+ }
+ 
+}
+
