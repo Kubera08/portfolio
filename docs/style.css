@@ -144,6 +144,9 @@ video {
 	margin-bottom: 20px;
 	margin-left: 20px;
 }
+.coordonnees i {
+	margin-left: 5px;
+}
 .title-paris {
 
     width: 750px;
@@ -271,6 +274,14 @@ video {
 	}
 	.nav-responsive-1 {
 		display: none;
+	}
+	.video-container {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	.img_video {
+		width: 100%;
+	}	
+
 	}
 
 }
