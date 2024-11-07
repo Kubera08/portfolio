@@ -267,7 +267,9 @@ video {
 
 	padding-bottom: 10px;
 }
-
+.mail {
+	font-size: 12px;
+}
 @media (min-width: 450px) {
 	.menu-toggle {
 		display: none;
