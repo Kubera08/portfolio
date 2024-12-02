@@ -1,3 +1,19 @@
+// script.js
+document.getElementById('view-cv').addEventListener('click', () => {
+    // Ouvre le fichier dans un nouvel onglet
+    window.open('mycv.pdf', '_blank');
+});
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.display = 'none'; // Cache le loader après 2 secondes
+    }, 2000);
+});
+
+
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modalImage');
 const closeModal = document.getElementById('closeModal');
@@ -24,7 +40,4 @@ modal.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
-
-
-
 

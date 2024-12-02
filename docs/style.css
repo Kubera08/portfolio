@@ -365,3 +365,18 @@ video {
  
 }
 
+
+
+button {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    font-size: 0.8rem;
+	margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
